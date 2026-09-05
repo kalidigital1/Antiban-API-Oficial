@@ -322,7 +322,7 @@ button:focus-visible, a:focus-visible {
 
 .credibility-copy h2 {
   max-width: 620px;
-  margin: 17px 0 0;
+  margin: 0;
   font-family: var(--app-font-display);
   font-size: clamp(2.35rem, 4.5vw, 4.8rem);
   font-weight: 600;
@@ -531,7 +531,7 @@ button:focus-visible, a:focus-visible {
 }
 
 .section-heading h2 {
-  margin: 17px 0 0;
+  margin: 0;
   color: hsl(var(--foreground));
   font-size: clamp(2.7rem, 5.1vw, 5.3rem);
   font-weight: 600;
@@ -737,10 +737,7 @@ button:focus-visible, a:focus-visible {
 }
 
 .quote-section .section-wrap {
-  display: grid;
-  grid-template-columns: 0.4fr 1.6fr;
-  gap: 70px;
-  align-items: start;
+  display: block;
 }
 
 .quote-kicker {
@@ -805,7 +802,7 @@ button:focus-visible, a:focus-visible {
 
 .proof-panel h3 {
   max-width: 510px;
-  margin: 45px 0 0;
+  margin: 0;
   font-family: var(--app-font-display);
   font-size: clamp(2.2rem, 4.2vw, 4.35rem);
   letter-spacing: -0.08em;
@@ -879,7 +876,7 @@ button:focus-visible, a:focus-visible {
 }
 
 .faq-intro h2 {
-  margin: 17px 0 0;
+  margin: 0;
   font-size: clamp(2.8rem, 5.2vw, 5.4rem);
   line-height: 0.9;
 }
@@ -967,7 +964,7 @@ button:focus-visible, a:focus-visible {
   position: relative;
   z-index: 1;
   max-width: 710px;
-  margin: 19px 0 0;
+  margin: 0;
   color: hsl(var(--background));
   font-size: clamp(2.8rem, 6.5vw, 6.6rem);
   line-height: 0.88;

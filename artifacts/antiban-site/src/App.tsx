@@ -229,7 +229,6 @@ function Hero() {
       </div>
       <div className="section-wrap hero-foot">
         <span>ANTIBAN / 001 — WHATSAPP BUSINESS API</span>
-        <span>São Paulo · Brasil</span>
       </div>
     </section>
   );
@@ -241,7 +240,6 @@ function CredibilitySection() {
       <div className="section-wrap">
         <Reveal className="credibility-card">
           <div className="credibility-copy">
-            <div className="mono-label" style={{ color: 'hsl(var(--foreground))' }}>Confiança para operar</div>
             <h2 className="display" id="credibility-title">Uma implementação séria começa antes da tecnologia.</h2>
             <p>
               A Antiban formaliza cada projeto em contrato, apresenta referências e conduz a migração com acompanhamento direto — do primeiro diagnóstico à operação.
@@ -274,7 +272,6 @@ function RiskSection() {
             <p>O problema não é se o seu número vai cair. É quanto dinheiro você vai perder até ele voltar.</p>
           </Reveal>
           <Reveal className="section-heading delay-1">
-            <div className="mono-label" style={{ color: '#ff765d' }}>O custo da instabilidade</div>
             <h2 className="display" id="risk-title">WhatsApp é canal de vendas. <em>Trate como infraestrutura.</em></h2>
             <p>Se sua empresa depende do WhatsApp para operar, cada queda vira uma interrupção comercial. E interrupção tem custo.</p>
             <div className="risk-list" aria-label="Operações que dependem do WhatsApp" data-testid="list-operational-risks">
@@ -304,7 +301,6 @@ function ProcessSection() {
     <section className="dark-section" id="processo" aria-labelledby="process-title">
       <div className="section-wrap steps-layout">
         <Reveal className="steps-intro">
-          <div className="mono-label">O método Antiban</div>
           <div className="section-heading">
             <h2 className="display" id="process-title">Quatro passos. <span style={{ color: 'hsl(var(--secondary))' }}>Zero improviso.</span></h2>
             <p>Você entra com um canal instável. Sai com a base oficial para operar atendimento e automações.</p>
@@ -335,7 +331,6 @@ function StatementSection() {
   return (
     <section className="quote-section" aria-labelledby="statement-title">
       <div className="section-wrap">
-        <div className="quote-kicker mono-label" style={{ color: 'rgba(21, 29, 58, 0.66)' }}>A mudança de perspectiva</div>
         <Reveal>
           <h2 className="quote-text" id="statement-title">
             Você não precisa de outro chip. <span>Precisa de uma estrutura profissional.</span>
@@ -352,12 +347,10 @@ function ProofSection() {
     <section className="proof-section" aria-labelledby="proof-title">
       <div className="section-wrap proof-grid">
         <Reveal className="proof-panel">
-          <div className="mono-label">O cálculo é simples</div>
           <h3 className="display">O custo de prevenir é pequeno perto do custo de parar.</h3>
           <div className="proof-stat"><span>48</span><small>horas</small></div>
         </Reveal>
         <Reveal className="proof-copy delay-1">
-          <div className="mono-label" style={{ color: '#ff765d' }}>Decisão operacional</div>
           <h2 className="display" id="proof-title">“Mas meu WhatsApp já funciona.”</h2>
           <p>Ótimo. A pergunta é: por quanto tempo? Se amanhã seu número cair, quanto sua empresa perde? R$1.000, R$5.000, R$10.000? Talvez muito mais.</p>
           <div className="proof-points">
@@ -380,7 +373,6 @@ function FAQSection() {
     <section className="faq-section" id="duvidas" aria-labelledby="faq-title">
       <div className="section-wrap faq-layout">
         <Reveal className="faq-intro">
-          <div className="mono-label" style={{ color: '#ff765d' }}>Perguntas diretas</div>
           <h2 className="display" id="faq-title">O que você precisa saber.</h2>
           <p>Sem letra miúda. Se uma dúvida ficou de fora, fale com nosso time direto pelo WhatsApp.</p>
           <a className="button-ghost" href={WHATSAPP_LINK} target="_blank" rel="noreferrer" style={{ borderColor: 'hsl(var(--foreground))', color: 'hsl(var(--foreground))', marginTop: '22px' }} data-testid="link-faq-whatsapp">
@@ -418,7 +410,6 @@ function CTASection() {
     <section className="cta-section" aria-labelledby="cta-title">
       <div className="section-wrap">
         <Reveal className="cta-card">
-          <div className="mono-label">Próximo passo / agora</div>
           <h2 className="display" id="cta-title">Não espere seu número cair para <span>resolver.</span></h2>
           <p>Em até 48 horas, sua empresa pode sair da dependência de soluções improvisadas e começar a operar com uma infraestrutura oficial.</p>
           <a className="button-primary" href={WHATSAPP_LINK} target="_blank" rel="noreferrer" data-testid="link-final-whatsapp">
