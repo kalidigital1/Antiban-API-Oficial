@@ -15,7 +15,6 @@ import {
   MoveRight,
   PlugZap,
   ShieldCheck,
-  Sparkles,
   X,
 } from 'lucide-react';
 import { ErrorBoundary } from '@/components/error-boundary';
@@ -302,7 +301,11 @@ function ProcessSection() {
             <h2 className="display" id="process-title">Quatro passos. <span style={{ color: 'hsl(var(--secondary))' }}>Zero improviso.</span></h2>
             <p>Você entra com um canal instável. Sai com a base oficial para operar atendimento e automações.</p>
           </div>
-          <div className="stamp"><Sparkles size={14} /><br />protocolo<br />48h</div>
+          <div className="stamp" data-testid="badge-implementation-time">
+            <span className="stamp-eyebrow">prazo de implementação</span>
+            <strong>48h</strong>
+            <span className="stamp-caption">da verificação à operação</span>
+          </div>
         </Reveal>
         <div className="steps-list">
           {steps.map((step, index) => {
