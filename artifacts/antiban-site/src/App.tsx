@@ -441,6 +441,7 @@ function Footer() {
         <div className="footer-meta">
           <span data-testid="text-footer-location">Meta Business Partner / Brasil</span>
           <span data-testid="text-footer-time">Implementação em até 48h</span>
+          <span data-testid="text-footer-cnpj">CNPJ 42.872.479/0001-04</span>
           <a href="#inicio" style={{ color: 'inherit', textDecoration: 'none' }} data-testid="link-footer-top">Voltar ao topo ↑</a>
         </div>
       </div>
