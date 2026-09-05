@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Antiban — API Oficial do WhatsApp"
+description = "Landing page da Antiban para empresas que precisam migrar sua operação comercial para a API oficial do WhatsApp em até 48 horas."
+version = "1.0.0"
+id = "artifacts/antiban-site"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22608
+
+[services.development]
+run = "pnpm --filter @workspace/antiban-site run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/antiban-site", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/antiban-site/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22608"
+BASE_PATH = "/"
