@@ -440,6 +440,22 @@ function Footer() {
   );
 }
 
+function WhatsAppFloat() {
+  return (
+    <a
+      className="whatsapp-float"
+      href={WHATSAPP_LINK}
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Falar com a Antiban pelo WhatsApp"
+      title="Falar com a Antiban pelo WhatsApp"
+      data-testid="link-floating-whatsapp"
+    >
+      <img src="/whatsapp-float.png" alt="" aria-hidden="true" />
+    </a>
+  );
+}
+
 function Home() {
   return (
     <div className="site-shell">
@@ -455,6 +471,7 @@ function Home() {
         <CTASection />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }
