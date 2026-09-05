@@ -201,7 +201,7 @@ function Hero() {
           </div>
           <div className="hero-note">
             <LockKeyhole size={14} />
-            <span>Contrato claro. Referências reais. Operação oficial.</span>
+            <span>Uma empresa de confiança total, do contrato a entrega.</span>
           </div>
         </Reveal>
 
@@ -226,9 +226,6 @@ function Hero() {
           </div>
           <span className="signal-label">transição de infraestrutura</span>
         </Reveal>
-      </div>
-      <div className="section-wrap hero-foot">
-        <span>ANTIBAN / 001 — WHATSAPP BUSINESS API</span>
       </div>
     </section>
   );
