@@ -236,7 +236,7 @@ button:focus-visible, a:focus-visible {
 
 .hero-title {
   max-width: 720px;
-  margin: 22px 0 26px;
+  margin: 0 0 26px;
   color: hsl(var(--background));
   font-size: clamp(3.5rem, 7.1vw, 6.8rem);
   font-weight: 600;
@@ -298,6 +298,81 @@ button:focus-visible, a:focus-visible {
 
 .hero-note svg {
   color: hsl(var(--secondary));
+}
+
+.credibility-section {
+  padding: 28px 0 0;
+  background: hsl(var(--background));
+}
+
+.credibility-card {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 46px;
+  align-items: center;
+  padding: 48px 52px;
+  border-radius: 24px;
+  background: hsl(var(--secondary));
+  color: hsl(var(--foreground));
+}
+
+.credibility-copy {
+  max-width: 660px;
+}
+
+.credibility-copy h2 {
+  max-width: 620px;
+  margin: 17px 0 0;
+  font-family: var(--app-font-display);
+  font-size: clamp(2.35rem, 4.5vw, 4.8rem);
+  font-weight: 600;
+  letter-spacing: -0.075em;
+  line-height: 0.92;
+}
+
+.credibility-copy p {
+  max-width: 580px;
+  margin: 23px 0 0;
+  color: rgba(21, 29, 58, 0.72);
+  font-size: 0.96rem;
+  line-height: 1.7;
+}
+
+.credibility-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 27px;
+}
+
+.credibility-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: hsl(var(--foreground));
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.credibility-item svg {
+  color: hsl(var(--accent));
+}
+
+.partner-badge {
+  display: flex;
+  min-height: 238px;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  border: 1px solid rgba(21, 29, 58, 0.12);
+  border-radius: 18px;
+  background: rgba(246, 247, 239, 0.78);
+}
+
+.partner-badge img {
+  display: block;
+  width: min(100%, 320px);
+  height: auto;
+  mix-blend-mode: multiply;
 }
 
 .system-visual {
@@ -973,7 +1048,7 @@ button:focus-visible, a:focus-visible {
   .nav-link { display: none; }
   .menu-toggle { display: inline-flex; }
   .hero { min-height: auto; padding-top: 168px; }
-  .hero-grid, .risk-layout, .steps-layout, .proof-grid, .faq-layout {
+  .hero-grid, .credibility-card, .risk-layout, .steps-layout, .proof-grid, .faq-layout {
     grid-template-columns: 1fr;
     gap: 60px;
   }
@@ -984,6 +1059,7 @@ button:focus-visible, a:focus-visible {
   .quote-section .section-wrap { grid-template-columns: 1fr; gap: 25px; }
   .faq-layout { gap: 44px; }
   .faq-intro p { max-width: 460px; }
+  .credibility-card { gap: 34px; }
 }
 
 @media (max-width: 600px) {
@@ -1000,6 +1076,9 @@ button:focus-visible, a:focus-visible {
   .hero-foot { position: static; display: block; margin-top: 46px; line-height: 2; }
   .hero-foot span { display: block; }
   .light-section, .dark-section, .proof-section, .faq-section { padding: 90px 0; }
+  .credibility-section { padding-top: 16px; }
+  .credibility-card { gap: 30px; padding: 30px 25px; }
+  .partner-badge { min-height: 190px; }
   .quote-section { padding: 92px 0 105px; }
   .risk-list { grid-template-columns: 1fr; }
   .risk-item:nth-child(odd) { border-right: 0; padding-left: 14px; }

@@ -25,7 +25,7 @@ import NotFound from '@/pages/not-found';
 import { Route, Switch, useLocation, Router as WouterRouter } from 'wouter';
 
 const queryClient = new QueryClient();
-const WHATSAPP_LINK = 'https://wa.me/5511999999999?text=Quero%20implementar%20o%20Antiban';
+const WHATSAPP_LINK = 'https://wa.me/5511977937213?text=Quero%20implementar%20o%20Antiban';
 
 const navItems = [
   { label: 'O risco', href: '#risco' },
@@ -185,7 +185,6 @@ function Hero() {
     <section className="hero" id="inicio" aria-labelledby="hero-title">
       <div className="section-wrap hero-grid">
         <Reveal className="hero-copy">
-          <div className="mono-label">Infraestrutura oficial para operação comercial</div>
           <h1 className="display hero-title" id="hero-title">
             Seu WhatsApp não pode ser o <span>ponto fraco</span> da sua empresa.
           </h1>
@@ -202,7 +201,7 @@ function Hero() {
           </div>
           <div className="hero-note">
             <LockKeyhole size={14} />
-            <span>Sem gambiarra. Sem depender de solução não oficial.</span>
+            <span>Contrato claro. Referências reais. Operação oficial.</span>
           </div>
         </Reveal>
 
@@ -231,6 +230,35 @@ function Hero() {
       <div className="section-wrap hero-foot">
         <span>ANTIBAN / 001 — WHATSAPP BUSINESS API</span>
         <span>São Paulo · Brasil</span>
+      </div>
+    </section>
+  );
+}
+
+function CredibilitySection() {
+  return (
+    <section className="credibility-section" aria-labelledby="credibility-title">
+      <div className="section-wrap">
+        <Reveal className="credibility-card">
+          <div className="credibility-copy">
+            <div className="mono-label" style={{ color: 'hsl(var(--foreground))' }}>Confiança para operar</div>
+            <h2 className="display" id="credibility-title">Uma implementação séria começa antes da tecnologia.</h2>
+            <p>
+              A Antiban formaliza cada projeto em contrato, apresenta referências e conduz a migração com acompanhamento direto — do primeiro diagnóstico à operação.
+            </p>
+            <div className="credibility-list">
+              {['Contrato de implementação', 'Referências de projetos realizados', 'Meta Business Partner'].map((item, index) => (
+                <div className="credibility-item" key={item} data-testid={`item-credibility-${index + 1}`}>
+                  <CircleCheck size={17} strokeWidth={2.3} />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="partner-badge">
+            <img src="/meta-business-partner.png" alt="Meta Business Partner" data-testid="img-meta-business-partner" />
+          </div>
+        </Reveal>
       </div>
     </section>
   );
@@ -411,7 +439,7 @@ function Footer() {
           <p>Seu WhatsApp é um canal de vendas. Trate ele como infraestrutura da sua empresa.</p>
         </div>
         <div className="footer-meta">
-          <span data-testid="text-footer-location">Brasil / operação oficial</span>
+          <span data-testid="text-footer-location">Meta Business Partner / Brasil</span>
           <span data-testid="text-footer-time">Implementação em até 48h</span>
           <a href="#inicio" style={{ color: 'inherit', textDecoration: 'none' }} data-testid="link-footer-top">Voltar ao topo ↑</a>
         </div>
@@ -426,6 +454,7 @@ function Home() {
       <Header />
       <main>
         <Hero />
+        <CredibilitySection />
         <RiskSection />
         <ProcessSection />
         <StatementSection />
